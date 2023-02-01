@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 2px 2px black;
+}
+
+a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav {
+    height: 5rem;
+}
+
+nav ul {
+    height: 5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 25%;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 100%;
+}
+
+a:hover {
+    color: sienna;
+}
+
+header {
+    background-image: url('immagini/pasta-fresca1.jpg');
+    background-size: cover;
+    font-size: 28px;
+    color: #fff;
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    margin-top: 4rem;
+}
+
+.icon-link {
+    position: absolute;
+    bottom: 20px;
+}
+
+.icon-container {
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-down-icon {
+    padding-top: 6px;
+    width: 40px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home-links {
+    background-color: rgba(255, 255, 255, .4);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 10rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-link {
+    border: 4px solid black;
+    height: 200px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-link a h2 {
+    margin-bottom: 1.6rem;
+}
+
+.row {
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.half-row img {
+    height: 90%;
+    width: 80%;
+}
+
+.text-content {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 80%;
+}
+
+.text-content h3 {
+    margin-bottom: 1rem;
+}
+
+.right {
+    text-align: start;
+}
+
+.left {
+    text-align: end;
+}
+
+#products-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-third {
+    height: 36rem;
+    width: 30%;
+}
+
+.one-third h2 {
+    background-color: rgba(255, 255, 255, .4);
+    border: 2px solid #fff;
+    letter-spacing: .5rem;
+    color: #000;
+    margin: 0 auto;
+    margin-top: 28rem;
+    padding: 10px 25px;
+    width: 70%;
+}
+
+.contacts-section {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+
+    #products-section {
+        flex-direction: column;
+    }
+
+    .one-third {
+        height: 36rem;
+        height: 200px;
+        width: 100%;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .one-third h2 {
+        background-color: rgba(255, 255, 255, .4);
+        border: 2px solid #fff;
+        letter-spacing: .5rem;
+        color: #000;
+        line-height: 40px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 5px 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
